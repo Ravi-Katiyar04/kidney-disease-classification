@@ -1,0 +1,41 @@
+Metadata-Version: 2.4
+Name: cnnClassifier
+Version: 0.0.0
+Summary: A small python package for CNN app
+Home-page: https://github.com/Ravi-Katiyar04/Kidney-Disease-Classification-Deep-Learning-Project
+Author: Ravi-Katiyar04
+Author-email: drxravikatiyar0000@gmail.com
+Project-URL: Bug Tracker, https://github.com/Ravi-Katiyar04/Kidney-Disease-Classification-Deep-Learning-Project/issues
+Dynamic: author
+Dynamic: author-email
+Dynamic: description
+Dynamic: home-page
+Dynamic: project-url
+Dynamic: summary
+
+# kidney-disease-classification-MLflow-DVC
+
+# How to run?
+### STEPS:
+
+Clone the repository
+
+```bash
+https://github.com/Ravi-Katiyar04/kidney-disease-classification-deep-learning-project.git
+```
+### STEP 01- Create a conda environment after opening the repository
+
+```bash
+python -m venv myvenv
+```
+
+```bash
+myvenv\Scripts\activate
+```
+
+
+### STEP 02- install the requirements
+```bash
+pip install -r requirements.txt
+```
+

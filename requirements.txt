@@ -1,19 +1,38 @@
-tensorflow==2.12.0
-pandas 
-dvc
-mlflow==2.2.2
-notebook
-numpy
-matplotlib
-seaborn
-python-box==6.0.2
-pyYAML
-tqdm
-ensure==1.0.2
-joblib
-types-PyYAML
-scipy
-Flask
-Flask-Cors
-gdown
+# Core ML
+tensorflow==2.20.0
+numpy>=2.1.0,<2.3.0
+pandas>=2.2.3,<3.0
+scipy>=1.14.1,<2.0
+# scikit-learn>=1.5.0,<2.0
+
+# Experiment Tracking
+mlflow>=3.3.0,<4.0
+
+# Data / Visualization
+matplotlib>=3.9.0,<4.0
+seaborn>=0.13.2,<1.0
+
+# Jupyter
+notebook>=7.2.0,<8.0
+# ipykernel>=6.29.0,<7.0
+
+# Utilities
+python-box>=7.2.0,<8.0
+PyYAML>=6.0.2,<7.0
+tqdm>=4.67.0,<5.0
+joblib>=1.4.2,<2.0
+types-PyYAML>=6.0.12,<7.0
+ensure==1.0.4
+
+# Web
+Flask>=3.1.0,<4.0
+Flask-Cors>=5.0.0,<6.0
+
+# Download
+gdown>=5.2.0,<6.0
+
+# DVC
+dvc>=3.59.0,<4.0
+
+# Local package
 -e .
