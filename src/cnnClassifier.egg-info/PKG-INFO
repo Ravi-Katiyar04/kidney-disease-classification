@@ -2,10 +2,10 @@ Metadata-Version: 2.4
 Name: cnnClassifier
 Version: 0.0.0
 Summary: A small python package for CNN app
-Home-page: https://github.com/Ravi-Katiyar04/Kidney-Disease-Classification-Deep-Learning-Project
+Home-page: https://github.com/Ravi-Katiyar04/Kidney-Disease-Classification
 Author: Ravi-Katiyar04
 Author-email: drxravikatiyar0000@gmail.com
-Project-URL: Bug Tracker, https://github.com/Ravi-Katiyar04/Kidney-Disease-Classification-Deep-Learning-Project/issues
+Project-URL: Bug Tracker, https://github.com/Ravi-Katiyar04/Kidney-Disease-Classification/issues
 Dynamic: author
 Dynamic: author-email
 Dynamic: description
