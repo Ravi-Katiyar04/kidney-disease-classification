@@ -73,3 +73,117 @@
 [2026-10-17 16:52:59,837: INFO: main: >>>>> stage Data Ingestion stage completed!<<<<<
 
 x==========x]
+[2026-10-17 18:18:49,973: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-17 18:18:49,981: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-17 18:18:49,985: INFO: common: created directory at: artifacts]
+[2026-10-17 18:18:49,987: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-17 18:19:03,195: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-17 18:19:03,446: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-17 18:38:40,273: INFO: main: >>>>> stage Data Ingestion stage started <<<<<]
+[2026-10-17 18:38:40,276: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-17 18:38:40,278: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-17 18:38:40,280: INFO: common: created directory at: artifacts]
+[2026-10-17 18:38:40,281: ERROR: main: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\main.py", line 9, in <module>
+    data_ingestion_pipeline.main()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2026-10-17 18:42:29,235: INFO: main: >>>>> stage Data Ingestion stage started <<<<<]
+[2026-10-17 18:42:29,236: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-17 18:42:29,238: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-17 18:42:29,238: INFO: common: created directory at: artifacts]
+[2026-10-17 18:42:29,238: ERROR: main: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\main.py", line 10, in <module>
+    data_ingestion_pipeline.main()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2026-10-17 18:45:56,810: INFO: main: >>>>> stage Data Ingestion stage started <<<<<]
+[2026-10-17 18:45:56,812: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-17 18:45:56,815: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-17 18:45:56,815: INFO: common: created directory at: artifacts]
+[2026-10-17 18:45:56,816: ERROR: main: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\main.py", line 10, in <module>
+    data_ingestion_pipeline.main()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2026-10-17 18:46:19,778: INFO: main: >>>>> stage Data Ingestion stage started <<<<<]
+[2026-10-17 18:46:19,780: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-17 18:46:19,781: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-17 18:46:19,782: INFO: common: created directory at: artifacts]
+[2026-10-17 18:46:19,782: ERROR: main: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\main.py", line 10, in <module>
+    data_ingestion_pipeline.main()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2026-10-17 18:51:23,400: INFO: main: >>>>> stage Data Ingestion stage started <<<<<]
+[2026-10-17 18:51:23,402: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-17 18:51:23,404: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-17 18:51:23,405: INFO: common: created directory at: artifacts]
+[2026-10-17 18:51:23,405: ERROR: main: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config']
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\main.py", line 10, in <module>
+    data_ingestion_pipeline.main()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 13, in main
+    data_ingestion_config = config.get_data_ingestion_config()
+                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'ConfigurationManager' object has no attribute 'get_data_ingestion_config'
+[2026-10-17 18:54:54,868: INFO: main: >>>>> stage Data Ingestion stage started <<<<<]
+[2026-10-17 18:54:54,870: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-17 18:54:54,872: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-17 18:54:54,873: INFO: common: created directory at: artifacts]
+[2026-10-17 18:54:54,874: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-17 18:54:54,875: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/18RmxqG-RItRmQNV7JvA__ik-eF6EGRPt/view?usp=sharing into file artifacts\data_ingestion\data.zip]
+[2026-10-17 18:54:59,393: ERROR: main: 'WindowsPath' object has no attribute 'write']
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\main.py", line 10, in <module>
+    data_ingestion_pipeline.main()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 32, in download_file
+    raise e
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 27, in download_file
+    gdown.download(prefix+file_id,zip_download_dir)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\gdown\download.py", line 376, in download
+    f.write(chunk)
+    ^^^^^^^
+AttributeError: 'WindowsPath' object has no attribute 'write'. Did you mean: 'drive'?
+[2026-10-17 18:58:26,287: INFO: main: >>>>> stage Data Ingestion stage started <<<<<]
+[2026-10-17 18:58:26,289: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-17 18:58:26,290: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-17 18:58:26,291: INFO: common: created directory at: artifacts]
+[2026-10-17 18:58:26,292: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-17 18:58:26,293: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/18RmxqG-RItRmQNV7JvA__ik-eF6EGRPt/view?usp=sharing into file artifacts\data_ingestion\data.zip]
+[2026-10-17 19:03:33,240: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/18RmxqG-RItRmQNV7JvA__ik-eF6EGRPt/view?usp=sharing into file artifacts\data_ingestion\data.zip]
+[2026-10-17 19:03:58,771: INFO: main: >>>>> stage Data Ingestion stage completed!<<<<<
+
+x==========x]
+[2026-10-17 19:03:58,772: INFO: main: >>>>> stage Prepare Base Model stage started <<<<<]
+[2026-10-17 19:03:58,777: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-17 19:03:58,779: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-17 19:03:58,780: INFO: common: created directory at: artifacts]
+[2026-10-17 19:03:58,781: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-17 19:03:59,441: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-17 19:03:59,758: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-17 19:03:59,894: INFO: main: >>>>> stage Prepare Base Model stage completed!<<<<<
+
+x==========x]
