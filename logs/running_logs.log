@@ -384,3 +384,41 @@ mlflow.exceptions.MlflowException: API request to endpoint /api/2.0/mlflow/runs/
 [2026-10-18 22:15:41,139: INFO: stage_04_model_evaulation: >>>>> stage Model Evaluation stage completed!<<<<<
 
 x==========x]
+[2026-10-18 22:37:53,462: INFO: stage_01_data_ingestion: >>>>> stage Data Ingestion stage started <<<<<]
+[2026-10-18 22:37:53,466: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-18 22:37:53,470: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-18 22:37:53,471: INFO: common: created directory at: artifacts]
+[2026-10-18 22:37:53,472: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-18 22:37:53,473: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/18RmxqG-RItRmQNV7JvA__ik-eF6EGRPt/view?usp=sharing into file artifacts\data_ingestion\data.zip]
+[2026-10-18 22:37:57,623: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/18RmxqG-RItRmQNV7JvA__ik-eF6EGRPt/view?usp=sharing into file artifacts\data_ingestion\data.zip]
+[2026-10-18 22:38:28,524: INFO: stage_01_data_ingestion: >>>>> stage Data Ingestion stage completed!<<<<<
+
+x==========x]
+[2026-10-18 22:40:23,388: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage started <<<<<]
+[2026-10-18 22:40:23,393: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-18 22:40:23,399: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-18 22:40:23,401: INFO: common: created directory at: artifacts]
+[2026-10-18 22:40:23,403: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-18 22:40:26,796: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-18 22:40:27,740: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-18 22:40:28,445: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage completed!<<<<<
+
+x==========x]
+[2026-10-18 22:40:41,818: INFO: stage_03_model_training: >>>>> stage Model Training stage started <<<<<]
+[2026-10-18 22:40:41,821: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-18 22:40:41,822: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-18 22:40:41,823: INFO: common: created directory at: artifacts]
+[2026-10-18 22:40:41,824: INFO: common: created directory at: artifacts\training]
+[2026-10-18 23:30:00,988: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-18 23:30:01,544: INFO: stage_03_model_training: >>>>> stage Model Training stage completed!<<<<<
+
+x==========x]
+[2026-10-18 23:30:23,767: INFO: stage_04_model_evaluation: >>>>> stage Model Evaluation stage started <<<<<]
+[2026-10-18 23:30:23,771: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-18 23:30:23,775: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-18 23:30:23,776: INFO: common: created directory at: artifacts]
+[2026-10-18 23:30:26,381: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-18 23:31:59,231: INFO: common: json file saved at: scores.json]
+[2026-10-18 23:34:25,704: INFO: stage_04_model_evaluation: >>>>> stage Model Evaluation stage completed!<<<<<
+
+x==========x]
