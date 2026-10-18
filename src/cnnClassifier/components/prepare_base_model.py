@@ -12,7 +12,7 @@ class PrepareBaseModel:
         self.config = config
 
     def get_base_model(self):
-        self.model = tf.keras.applications.VGG16(
+        self.model = tf.keras.applications.EfficientNetV2B0(
             input_shape=self.config.params_image_size,
             weights=self.config.params_weights,
             include_top=self.config.params_include_top
@@ -31,19 +31,29 @@ class PrepareBaseModel:
         freeze_till,
         learning_rate
     ):
-        # Freeze pretrained layers
+        # Freeze pretrained layers as configured
         if freeze_all:
             for layer in model.layers:
                 layer.trainable = False
-
         elif freeze_till is not None and freeze_till > 0:
             for layer in model.layers[:-freeze_till]:
                 layer.trainable = False
+            for layer in model.layers[-freeze_till:]:
+                layer.trainable = True
 
         # Classification head
         x = tf.keras.layers.GlobalAveragePooling2D(
             name="global_average_pooling"
         )(model.output)
+
+        x = tf.keras.layers.BatchNormalization(
+            name="batch_norm"
+        )(x)
+
+        x = tf.keras.layers.Dropout(
+            rate=0.3,
+            name="dropout_1"
+        )(x)
 
         x = tf.keras.layers.Dense(
             units=256,
@@ -52,13 +62,13 @@ class PrepareBaseModel:
         )(x)
 
         x = tf.keras.layers.Dropout(
-            rate=0.4,
-            name="dropout"
+            rate=0.2,
+            name="dropout_2"
         )(x)
 
         # Four classes: Normal, Tumor, Stone, Cyst
         prediction = tf.keras.layers.Dense(
-            units=classes,  # 4
+            units=classes,
             activation="softmax",
             name="predictions"
         )(x)
@@ -69,7 +79,7 @@ class PrepareBaseModel:
         )
 
         full_model.compile(
-            optimizer=tf.keras.optimizers.SGD(
+            optimizer=tf.keras.optimizers.Adam(
                 learning_rate=learning_rate
             ),
             loss=tf.keras.losses.CategoricalCrossentropy(),
@@ -83,8 +93,8 @@ class PrepareBaseModel:
         self.full_model = self._prepare_full_model(
             model=self.model,
             classes=self.config.params_classes,
-            freeze_all=True,
-            freeze_till=None,
+            freeze_all=False,
+            freeze_till=20,
             learning_rate=self.config.params_learning_rate
         )
 
@@ -95,4 +105,4 @@ class PrepareBaseModel:
 
     @staticmethod
     def save_model(path: Path, model: tf.keras.Model):
-        model.save(path)
+        model.save(str(path))
