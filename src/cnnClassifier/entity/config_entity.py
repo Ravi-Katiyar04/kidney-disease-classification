@@ -20,6 +20,7 @@ class PrepareBaseModelConfig:
     params_include_top: bool
     params_weights: str
     params_classes: int
+    params_freeze_till: int
 
 
 @dataclass(frozen=True)
@@ -32,6 +33,7 @@ class TrainingConfig:
     params_batch_size: int
     params_is_augmentation: bool
     params_image_size: list
+    params_learning_rate: float
 
 
 @dataclass(frozen=True)

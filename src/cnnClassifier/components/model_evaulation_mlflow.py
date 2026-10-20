@@ -24,14 +24,13 @@ class Evaluation:
 
     def _valid_generator(self):
         datagenerator_kwargs = dict(
-            rescale=1.0 / 255,
-            validation_split=0.30
+            validation_split=0.20
         )
 
         dataflow_kwargs = dict(
             target_size=self.config.params_image_size[:-1],
             batch_size=self.config.params_batch_size,
-            interpolation="bilinear",
+            interpolation="bicubic",
             class_mode="categorical"
         )
 
@@ -45,6 +44,7 @@ class Evaluation:
             directory=self.config.training_data,
             subset="validation",
             shuffle=False,
+            seed=42,
             **dataflow_kwargs
         )
 
@@ -65,10 +65,11 @@ class Evaluation:
         self.save_score()
 
     def save_score(self):
-        scores = {
-            "loss": float(self.score[0]),
-            "accuracy": float(self.score[1])
-        }
+        metric_names = getattr(self.model, "metrics_names", ["loss", "accuracy"])
+        scores = {}
+        for idx, (name, val) in enumerate(zip(metric_names, self.score)):
+            clean_name = "accuracy" if name == "compile_metrics" or idx == 1 else name
+            scores[clean_name] = float(val)
 
         save_json(
             path=Path("scores.json"),
@@ -133,10 +134,12 @@ class Evaluation:
         with mlflow.start_run(experiment_id=experiment_id):
             mlflow.log_params(self.config.all_params)
 
-            mlflow.log_metrics({
-                "loss": float(self.score[0]),
-                "accuracy": float(self.score[1])
-            })
+            metric_names = getattr(self.model, "metrics_names", ["loss", "accuracy"])
+            metrics_dict = {}
+            for idx, (name, val) in enumerate(zip(metric_names, self.score)):
+                clean_name = "accuracy" if name == "compile_metrics" or idx == 1 else name
+                metrics_dict[clean_name] = float(val)
+            mlflow.log_metrics(metrics_dict)
 
             mlflow.keras.log_model(
                 model=self.model,

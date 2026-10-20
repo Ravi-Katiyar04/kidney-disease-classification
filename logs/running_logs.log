@@ -422,3 +422,681 @@ x==========x]
 [2026-10-18 23:34:25,704: INFO: stage_04_model_evaluation: >>>>> stage Model Evaluation stage completed!<<<<<
 
 x==========x]
+[2026-10-19 00:11:49,663: INFO: stage_04_model_evaluation: >>>>> stage Model Evaluation stage started <<<<<]
+[2026-10-19 00:11:49,673: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-19 00:11:49,677: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-19 00:11:49,678: INFO: common: created directory at: artifacts]
+[2026-10-19 00:11:51,639: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-19 00:12:55,658: INFO: common: json file saved at: scores.json]
+[2026-10-19 00:14:37,616: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage started <<<<<]
+[2026-10-19 00:14:37,618: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-19 00:14:37,620: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-19 00:14:37,621: INFO: common: created directory at: artifacts]
+[2026-10-19 00:14:37,622: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-19 00:14:39,482: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-19 00:14:40,110: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-19 00:14:40,477: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage completed!<<<<<
+
+x==========x]
+[2026-10-19 00:14:49,063: INFO: stage_03_model_training: >>>>> stage Model Training stage started <<<<<]
+[2026-10-19 00:14:49,065: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-19 00:14:49,067: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-19 00:14:49,068: INFO: common: created directory at: artifacts]
+[2026-10-19 00:14:49,069: INFO: common: created directory at: artifacts\training]
+[2026-10-19 00:14:51,321: INFO: stage_04_model_evaluation: >>>>> stage Model Evaluation stage completed!<<<<<
+
+x==========x]
+[2026-10-19 01:05:45,079: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-19 01:05:45,502: INFO: stage_03_model_training: >>>>> stage Model Training stage completed!<<<<<
+
+x==========x]
+[2026-10-19 01:06:03,427: INFO: stage_04_model_evaluation: >>>>> stage Model Evaluation stage started <<<<<]
+[2026-10-19 01:06:03,430: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-19 01:06:03,432: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-19 01:06:03,433: INFO: common: created directory at: artifacts]
+[2026-10-19 01:06:05,402: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-19 01:07:05,837: INFO: common: json file saved at: scores.json]
+[2026-10-19 01:08:39,732: INFO: stage_04_model_evaluation: >>>>> stage Model Evaluation stage completed!<<<<<
+
+x==========x]
+[2026-10-19 01:11:56,396: INFO: stage_03_model_training: >>>>> stage Model Training stage started <<<<<]
+[2026-10-19 01:11:56,398: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-19 01:11:56,401: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-19 01:11:56,402: INFO: common: created directory at: artifacts]
+[2026-10-19 01:11:56,403: INFO: common: created directory at: artifacts\training]
+[2026-10-19 03:04:05,709: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-19 03:04:06,145: INFO: stage_03_model_training: >>>>> stage Model Training stage completed!<<<<<
+
+x==========x]
+[2026-10-19 03:04:24,475: INFO: stage_04_model_evaluation: >>>>> stage Model Evaluation stage started <<<<<]
+[2026-10-19 03:04:24,478: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-19 03:04:24,480: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-19 03:04:24,482: INFO: common: created directory at: artifacts]
+[2026-10-19 03:04:26,428: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-19 03:05:27,804: INFO: common: json file saved at: scores.json]
+[2026-10-19 03:06:48,777: INFO: stage_04_model_evaluation: >>>>> stage Model Evaluation stage completed!<<<<<
+
+x==========x]
+[2026-10-19 11:01:50,436: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage started <<<<<]
+[2026-10-19 11:01:50,445: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-19 11:01:50,449: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-19 11:01:50,451: INFO: common: created directory at: artifacts]
+[2026-10-19 11:01:50,452: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-19 11:01:52,458: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-19 11:01:53,484: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-19 11:01:54,104: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage completed!<<<<<
+
+x==========x]
+[2026-10-19 11:03:28,092: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage started <<<<<]
+[2026-10-19 11:03:28,095: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-19 11:03:28,097: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-19 11:03:28,098: INFO: common: created directory at: artifacts]
+[2026-10-19 11:03:28,099: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-19 11:03:29,936: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-19 11:03:30,807: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-19 11:03:31,228: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage completed!<<<<<
+
+x==========x]
+[2026-10-19 11:03:41,594: INFO: stage_03_model_training: >>>>> stage Model Training stage started <<<<<]
+[2026-10-19 11:03:41,597: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-19 11:03:41,598: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-19 11:03:41,599: INFO: common: created directory at: artifacts]
+[2026-10-19 11:03:41,600: INFO: common: created directory at: artifacts\training]
+[2026-10-19 11:11:50,376: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-19 11:26:20,516: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-19 11:53:53,784: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-19 15:47:34,065: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-19 16:34:17,634: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-19 16:34:18,270: INFO: stage_03_model_training: >>>>> stage Model Training stage completed!<<<<<
+
+x==========x]
+[2026-10-19 16:34:47,371: INFO: stage_04_model_evaluation: >>>>> stage Model Evaluation stage started <<<<<]
+[2026-10-19 16:34:47,374: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-19 16:34:47,379: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-19 16:34:47,381: INFO: common: created directory at: artifacts]
+[2026-10-19 16:34:49,782: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-19 16:35:59,941: INFO: common: json file saved at: scores.json]
+[2026-10-19 16:41:07,381: INFO: stage_04_model_evaluation: >>>>> stage Model Evaluation stage completed!<<<<<
+
+x==========x]
+[2026-10-19 23:15:32,524: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage started <<<<<]
+[2026-10-19 23:15:32,528: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-19 23:15:32,529: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-19 23:15:32,530: INFO: common: created directory at: artifacts]
+[2026-10-19 23:15:32,530: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-19 23:15:34,204: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-19 23:15:34,927: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-19 23:15:35,324: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage completed!<<<<<
+
+x==========x]
+[2026-10-19 23:17:38,636: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage started <<<<<]
+[2026-10-19 23:17:38,639: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-19 23:17:38,641: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-19 23:17:38,641: INFO: common: created directory at: artifacts]
+[2026-10-19 23:17:38,643: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-19 23:17:40,195: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-19 23:17:40,810: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-19 23:17:41,181: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage completed!<<<<<
+
+x==========x]
+[2026-10-19 23:17:49,709: INFO: stage_03_model_training: >>>>> stage Model Training stage started <<<<<]
+[2026-10-19 23:17:49,712: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-19 23:17:49,714: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-19 23:17:49,714: INFO: common: created directory at: artifacts]
+[2026-10-19 23:17:49,715: INFO: common: created directory at: artifacts\training]
+[2026-10-19 23:48:52,488: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-20 00:17:13,859: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-20 00:58:46,314: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-20 01:05:52,749: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-20 01:34:02,419: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-20 01:34:02,906: INFO: stage_03_model_training: >>>>> stage Model Training stage completed!<<<<<
+
+x==========x]
+[2026-10-20 01:34:27,013: INFO: stage_04_model_evaluation: >>>>> stage Model Evaluation stage started <<<<<]
+[2026-10-20 01:34:27,016: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-20 01:34:27,020: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-20 01:34:27,021: INFO: common: created directory at: artifacts]
+[2026-10-20 01:34:29,645: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-20 01:35:32,169: INFO: common: json file saved at: scores.json]
+[2026-10-20 01:37:30,665: INFO: stage_04_model_evaluation: >>>>> stage Model Evaluation stage completed!<<<<<
+
+x==========x]
+[2026-10-20 01:52:16,223: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage started <<<<<]
+[2026-10-20 01:52:16,235: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-20 01:52:16,239: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-20 01:52:16,239: INFO: common: created directory at: artifacts]
+[2026-10-20 01:52:16,240: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-20 01:52:18,166: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-20 01:52:18,958: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-20 01:52:19,423: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage completed!<<<<<
+
+x==========x]
+[2026-10-20 01:53:36,441: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage started <<<<<]
+[2026-10-20 01:53:36,444: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-20 01:53:36,445: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-20 01:53:36,446: INFO: common: created directory at: artifacts]
+[2026-10-20 01:53:36,447: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-20 01:53:37,974: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-20 01:53:38,693: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-20 01:53:39,211: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage completed!<<<<<
+
+x==========x]
+[2026-10-20 01:53:49,602: INFO: stage_03_model_training: >>>>> stage Model Training stage started <<<<<]
+[2026-10-20 01:53:49,605: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-20 01:53:49,607: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-20 01:53:49,608: INFO: common: created directory at: artifacts]
+[2026-10-20 01:53:49,610: INFO: common: created directory at: artifacts\training]
+[2026-10-20 02:08:21,092: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-20 03:32:59,210: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-20 03:32:59,246: INFO: stage_03_model_training: >>>>> stage Model Training stage completed!<<<<<
+
+x==========x]
+[2026-10-20 03:33:22,009: INFO: stage_04_model_evaluation: >>>>> stage Model Evaluation stage started <<<<<]
+[2026-10-20 03:33:22,013: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-20 03:33:22,015: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-20 03:33:22,016: INFO: common: created directory at: artifacts]
+[2026-10-20 03:33:24,146: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-20 03:35:29,329: INFO: common: json file saved at: scores.json]
+[2026-10-20 03:38:44,679: INFO: stage_04_model_evaluation: >>>>> stage Model Evaluation stage completed!<<<<<
+
+x==========x]
+[2026-10-20 16:37:17,780: INFO: stage_01_data_ingestion: >>>>> stage Data Ingestion stage started <<<<<]
+[2026-10-20 16:37:17,785: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-20 16:37:17,789: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-20 16:37:17,791: INFO: common: created directory at: artifacts]
+[2026-10-20 16:37:17,791: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-20 16:37:17,792: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/18RmxqG-RItRmQNV7JvA__ik-eF6EGRPt/view?usp=sharing into file artifacts\data_ingestion\data.zip]
+[2026-10-20 16:37:27,585: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/18RmxqG-RItRmQNV7JvA__ik-eF6EGRPt/view?usp=sharing into file artifacts\data_ingestion\data.zip]
+[2026-10-20 16:37:27,587: INFO: data_ingestion: Dataset already extracted at artifacts\data_ingestion\CT-KIDNEY-DATASET]
+[2026-10-20 16:37:31,077: INFO: data_ingestion: Building patient-wise grouping and checking for duplicates...]
+[2026-10-20 16:39:02,024: INFO: data_ingestion: Original dataset: 12446 images -> After exact deduplication: 11929 images.]
+[2026-10-20 16:39:02,337: INFO: data_ingestion: Saved patient-wise split manifest to artifacts\data_ingestion\split_manifest.csv]
+[2026-10-20 16:39:02,356: INFO: common: json file saved at: artifacts\data_ingestion\split_summary.json]
+[2026-10-20 16:39:02,356: INFO: data_ingestion: Saved split summary to artifacts\data_ingestion\split_summary.json]
+[2026-10-20 16:39:02,371: INFO: stage_01_data_ingestion: >>>>> stage Data Ingestion stage completed!<<<<<
+
+x==========x]
+[2026-10-20 16:40:06,395: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage started <<<<<]
+[2026-10-20 16:40:06,400: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-20 16:40:06,404: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-20 16:40:06,405: INFO: common: created directory at: artifacts]
+[2026-10-20 16:40:06,406: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-20 16:40:08,644: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-20 16:40:09,257: ERROR: stage_02_prepare_base_model: name 'self' is not defined]
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 24, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\pipeline\stage_02_prepare_base_model.py", line 17, in main
+    prepare_base_model.update_base_model()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\components\prepare_base_model.py", line 118, in update_base_model
+    self.full_model = self._prepare_full_model(
+                      ~~~~~~~~~~~~~~~~~~~~~~~~^
+        model=self.model,
+        ^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        learning_rate=self.config.params_learning_rate
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\components\prepare_base_model.py", line 87, in _prepare_full_model
+    dropout_rate = getattr(self.config, "params_dropout_rate", 0.5)
+                           ^^^^
+NameError: name 'self' is not defined
+[2026-10-20 16:40:58,257: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage started <<<<<]
+[2026-10-20 16:40:58,261: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-20 16:40:58,263: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-20 16:40:58,264: INFO: common: created directory at: artifacts]
+[2026-10-20 16:40:58,265: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-20 16:40:59,947: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-20 16:41:00,765: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-20 16:41:01,265: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage completed!<<<<<
+
+x==========x]
+[2026-10-20 16:41:47,009: INFO: stage_03_model_training: >>>>> stage Model Training stage started <<<<<]
+[2026-10-20 16:41:47,014: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-20 16:41:47,017: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-20 16:41:47,018: INFO: common: created directory at: artifacts]
+[2026-10-20 16:41:47,019: INFO: common: created directory at: artifacts\training]
+[2026-10-20 16:41:48,749: INFO: model_training: Loaded split manifest: Train=7950 samples, Val=1993 samples.]
+[2026-10-20 16:41:49,151: INFO: model_training: Class weighting for training balance: {0: np.float64(0.9091948764867338), 1: np.float64(0.596667667367157), 2: np.float64(2.191289966923925), 3: np.float64(1.302424639580603)}]
+[2026-10-20 16:41:49,152: INFO: model_training: === Phase 1: Warmup Training (3 epochs) ===]
+[2026-10-20 17:05:00,355: INFO: model_training: === Phase 2: Gradual Fine-Tuning (Unfreezing top 30 layers) ===]
+[2026-10-20 17:07:17,843: ERROR: stage_03_model_training: Graph execution error:
+
+Detected at node PyFunc defined at (most recent call last):
+<stack traces unavailable>
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\HP\\Desktop\\coding\\kidney-disease-classification\\artifacts\\data_ingestion\\CT-KIDNEY-DATASET\\Cyst\\Cyst- (1462).jpg'
+Traceback (most recent call last):
+
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\tensorflow\python\ops\script_ops.py", line 269, in __call__
+    ret = func(*args)
+
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\tensorflow\python\autograph\impl\api.py", line 643, in wrapper
+    return func(*args, **kwargs)
+
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\tensorflow\python\data\ops\from_generator_op.py", line 198, in generator_py_func
+    values = next(generator_state.get_iterator(iterator_id))
+
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\keras\src\trainers\data_adapters\py_dataset_adapter.py", line 264, in _finite_generator
+    yield self._standardize_batch(self.py_dataset[i])
+                                  ~~~~~~~~~~~~~~~^^^
+
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 72, in __getitem__
+    return self._get_batches_of_transformed_samples(index_array)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 317, in _get_batches_of_transformed_samples
+    img = image_utils.load_img(
+        filepaths[j],
+    ...<3 lines>...
+        keep_aspect_ratio=self.keep_aspect_ratio,
+    )
+
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\keras\src\utils\image_utils.py", line 247, in load_img
+    with open(path, "rb") as f:
+         ~~~~^^^^^^^^^^^^
+
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\HP\\Desktop\\coding\\kidney-disease-classification\\artifacts\\data_ingestion\\CT-KIDNEY-DATASET\\Cyst\\Cyst- (1462).jpg'
+
+
+	 [[{{node PyFunc}}]]
+	 [[IteratorGetNext]] [Op:__inference_multi_step_on_iterator_29289]]
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\pipeline\stage_03_model_training.py", line 23, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\pipeline\stage_03_model_training.py", line 17, in main
+    training.train()
+    ~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\components\model_training.py", line 179, in train
+    self.model.fit(
+    ~~~~~~~~~~~~~~^
+        self.train_generator,
+        ^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        verbose=1
+        ^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\keras\src\utils\traceback_utils.py", line 122, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\tensorflow\python\eager\execute.py", line 59, in quick_execute
+    except TypeError as e:
+    ...<5 lines>...
+      raise e
+tensorflow.python.framework.errors_impl.UnknownError: Graph execution error:
+
+Detected at node PyFunc defined at (most recent call last):
+<stack traces unavailable>
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\HP\\Desktop\\coding\\kidney-disease-classification\\artifacts\\data_ingestion\\CT-KIDNEY-DATASET\\Cyst\\Cyst- (1462).jpg'
+Traceback (most recent call last):
+
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\tensorflow\python\ops\script_ops.py", line 269, in __call__
+    ret = func(*args)
+
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\tensorflow\python\autograph\impl\api.py", line 643, in wrapper
+    return func(*args, **kwargs)
+
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\tensorflow\python\data\ops\from_generator_op.py", line 198, in generator_py_func
+    values = next(generator_state.get_iterator(iterator_id))
+
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\keras\src\trainers\data_adapters\py_dataset_adapter.py", line 264, in _finite_generator
+    yield self._standardize_batch(self.py_dataset[i])
+                                  ~~~~~~~~~~~~~~~^^^
+
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 72, in __getitem__
+    return self._get_batches_of_transformed_samples(index_array)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^
+
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\keras\src\legacy\preprocessing\image.py", line 317, in _get_batches_of_transformed_samples
+    img = image_utils.load_img(
+        filepaths[j],
+    ...<3 lines>...
+        keep_aspect_ratio=self.keep_aspect_ratio,
+    )
+
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\keras\src\utils\image_utils.py", line 247, in load_img
+    with open(path, "rb") as f:
+         ~~~~^^^^^^^^^^^^
+
+FileNotFoundError: [Errno 2] No such file or directory: 'C:\\Users\\HP\\Desktop\\coding\\kidney-disease-classification\\artifacts\\data_ingestion\\CT-KIDNEY-DATASET\\Cyst\\Cyst- (1462).jpg'
+
+
+	 [[{{node PyFunc}}]]
+	 [[IteratorGetNext]] [Op:__inference_multi_step_on_iterator_29289]
+[2026-10-20 17:07:24,338: INFO: stage_01_data_ingestion: >>>>> stage Data Ingestion stage started <<<<<]
+[2026-10-20 17:07:24,343: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-20 17:07:24,347: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-20 17:07:24,350: INFO: common: created directory at: artifacts]
+[2026-10-20 17:07:24,354: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-20 17:07:24,360: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/18RmxqG-RItRmQNV7JvA__ik-eF6EGRPt/view?usp=sharing into file artifacts\data_ingestion\data.zip]
+[2026-10-20 17:09:47,009: ERROR: stage_01_data_ingestion: HTTPSConnectionPool(host='drive.google.com', port=443): Read timed out. (read timeout=None)]
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\connectionpool.py", line 470, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\connectionpool.py", line 1125, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\connection.py", line 878, in connect
+    wrapped_socket, is_verified = _ssl_wrap_socket_and_match_hostname(
+                                  ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<14 lines>...
+        assert_fingerprint=self.assert_fingerprint,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\connection.py", line 1080, in _ssl_wrap_socket_and_match_hostname
+    ssl_sock = ssl_wrap_socket(
+        sock=sock,
+    ...<8 lines>...
+        tls_in_tls=tls_in_tls,
+    )
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\util\ssl_.py", line 437, in ssl_wrap_socket
+    ssl_sock = _ssl_wrap_socket_impl(sock, context, tls_in_tls, server_hostname)
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\util\ssl_.py", line 481, in _ssl_wrap_socket_impl
+    return ssl_context.wrap_socket(sock, server_hostname=server_hostname)
+           ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 455, in wrap_socket
+    return self.sslsocket_class._create(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        sock=sock,
+        ^^^^^^^^^^
+    ...<5 lines>...
+        session=session
+        ^^^^^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1076, in _create
+    self.do_handshake()
+    ~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\ssl.py", line 1372, in do_handshake
+    self._sslobj.do_handshake()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^^
+TimeoutError: [WinError 10060] A connection attempt failed because the connected party did not properly respond after a period of time, or established connection failed because connected host has failed to respond
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\util\retry.py", line 510, in increment
+    raise reraise(type(error), error, _stacktrace)
+          ~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\util\util.py", line 39, in reraise
+    raise value
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\connectionpool.py", line 494, in _make_request
+    raise new_e
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\connectionpool.py", line 472, in _make_request
+    self._raise_timeout(err=e, url=url, timeout_value=conn.timeout)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\connectionpool.py", line 373, in _raise_timeout
+    raise ReadTimeoutError(
+        self, url, f"Read timed out. (read timeout={timeout_value})"
+    ) from err
+urllib3.exceptions.ReadTimeoutError: HTTPSConnectionPool(host='drive.google.com', port=443): Read timed out. (read timeout=None)
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 24, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 37, in download_file
+    raise e
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 27, in download_file
+    gdown.download(
+    ~~~~~~~~~~~~~~^
+        prefix + file_id,
+        ^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        resume=True
+        ^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\gdown\download.py", line 208, in download
+    res = sess.get(url, stream=True, verify=verify)
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\requests\sessions.py", line 671, in get
+    return self.request("GET", url, params=params, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\requests\adapters.py", line 742, in send
+    raise ReadTimeout(e, request=request)
+requests.exceptions.ReadTimeout: HTTPSConnectionPool(host='drive.google.com', port=443): Read timed out. (read timeout=None)
+[2026-10-20 17:11:16,595: INFO: stage_01_data_ingestion: >>>>> stage Data Ingestion stage started <<<<<]
+[2026-10-20 17:11:16,599: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-20 17:11:16,601: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-20 17:11:16,603: INFO: common: created directory at: artifacts]
+[2026-10-20 17:11:16,605: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-20 17:11:16,607: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/18RmxqG-RItRmQNV7JvA__ik-eF6EGRPt/view?usp=sharing into file artifacts\data_ingestion\data.zip]
+[2026-10-20 17:11:16,628: ERROR: stage_01_data_ingestion: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=18RmxqG-RItRmQNV7JvA__ik-eF6EGRPt (Caused by NameResolutionError("HTTPSConnection(host='drive.google.com', port=443): Failed to resolve 'drive.google.com' ([Errno 11001] getaddrinfo failed)"))]
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\connection.py", line 239, in _new_conn
+    sock = connection.create_connection(
+        (self._dns_host, self.port),
+    ...<2 lines>...
+        socket_options=self.socket_options,
+    )
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\util\connection.py", line 60, in create_connection
+    for res in socket.getaddrinfo(host, port, family, socket.SOCK_STREAM):
+               ~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\AppData\Local\Programs\Python\Python313\Lib\socket.py", line 981, in getaddrinfo
+    for res in _socket.getaddrinfo(host, port, family, type, proto, flags):
+               ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+socket.gaierror: [Errno 11001] getaddrinfo failed
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\connectionpool.py", line 793, in urlopen
+    response = self._make_request(
+        conn,
+    ...<10 lines>...
+        **response_kw,
+    )
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\connectionpool.py", line 494, in _make_request
+    raise new_e
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\connectionpool.py", line 470, in _make_request
+    self._validate_conn(conn)
+    ~~~~~~~~~~~~~~~~~~~^^^^^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\connectionpool.py", line 1125, in _validate_conn
+    conn.connect()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\connection.py", line 827, in connect
+    self.sock = sock = self._new_conn()
+                       ~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\connection.py", line 246, in _new_conn
+    raise NameResolutionError(self.host, self, e) from e
+urllib3.exceptions.NameResolutionError: HTTPSConnection(host='drive.google.com', port=443): Failed to resolve 'drive.google.com' ([Errno 11001] getaddrinfo failed)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\requests\adapters.py", line 696, in send
+    resp = conn.urlopen(
+        method=request.method,
+    ...<9 lines>...
+        chunked=chunked,
+    )
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\connectionpool.py", line 847, in urlopen
+    retries = retries.increment(
+        method, url, error=new_e, _pool=self, _stacktrace=sys.exc_info()[2]
+    )
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\urllib3\util\retry.py", line 555, in increment
+    raise MaxRetryError(_pool, url, reason) from reason  # type: ignore[arg-type]
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=18RmxqG-RItRmQNV7JvA__ik-eF6EGRPt (Caused by NameResolutionError("HTTPSConnection(host='drive.google.com', port=443): Failed to resolve 'drive.google.com' ([Errno 11001] getaddrinfo failed)"))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 24, in <module>
+    obj.main()
+    ~~~~~~~~^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\pipeline\stage_01_data_ingestion.py", line 15, in main
+    data_ingestion.download_file()
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 37, in download_file
+    raise e
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\src\cnnClassifier\components\data_ingestion.py", line 27, in download_file
+    gdown.download(
+    ~~~~~~~~~~~~~~^
+        prefix + file_id,
+        ^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        resume=True
+        ^^^^^^^^^^^
+    )
+    ^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\gdown\download.py", line 208, in download
+    res = sess.get(url, stream=True, verify=verify)
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\requests\sessions.py", line 671, in get
+    return self.request("GET", url, params=params, **kwargs)
+           ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\requests\sessions.py", line 651, in request
+    resp = self.send(prep, **send_kwargs)
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\requests\sessions.py", line 784, in send
+    r = adapter.send(request, **kwargs)
+  File "C:\Users\HP\Desktop\coding\kidney-disease-classification\venv\Lib\site-packages\requests\adapters.py", line 729, in send
+    raise ConnectionError(e, request=request)
+requests.exceptions.ConnectionError: HTTPSConnectionPool(host='drive.google.com', port=443): Max retries exceeded with url: /uc?/export=download&id=18RmxqG-RItRmQNV7JvA__ik-eF6EGRPt (Caused by NameResolutionError("HTTPSConnection(host='drive.google.com', port=443): Failed to resolve 'drive.google.com' ([Errno 11001] getaddrinfo failed)"))
+[2026-10-20 17:14:38,670: INFO: stage_01_data_ingestion: >>>>> stage Data Ingestion stage started <<<<<]
+[2026-10-20 17:14:38,673: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-20 17:14:38,677: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-20 17:14:38,678: INFO: common: created directory at: artifacts]
+[2026-10-20 17:14:38,679: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-20 17:14:38,680: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/18RmxqG-RItRmQNV7JvA__ik-eF6EGRPt/view?usp=sharing into file artifacts\data_ingestion\data.zip]
+[2026-10-20 17:22:58,469: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/18RmxqG-RItRmQNV7JvA__ik-eF6EGRPt/view?usp=sharing into file artifacts\data_ingestion\data.zip]
+[2026-10-20 17:22:58,476: INFO: data_ingestion: Extracting zip file artifacts\data_ingestion\data.zip to artifacts\data_ingestion\CT-KIDNEY-DATASET]
+[2026-10-20 17:23:33,344: INFO: data_ingestion: Building patient-wise grouping and checking for duplicates...]
+[2026-10-20 17:24:56,381: INFO: data_ingestion: Original dataset: 12446 images -> After exact deduplication: 11929 images.]
+[2026-10-20 17:24:56,688: INFO: data_ingestion: Saved patient-wise split manifest to artifacts\data_ingestion\split_manifest.csv]
+[2026-10-20 17:24:56,706: INFO: common: json file saved at: artifacts\data_ingestion\split_summary.json]
+[2026-10-20 17:24:56,707: INFO: data_ingestion: Saved split summary to artifacts\data_ingestion\split_summary.json]
+[2026-10-20 17:24:56,720: INFO: stage_01_data_ingestion: >>>>> stage Data Ingestion stage completed!<<<<<
+
+x==========x]
+[2026-10-20 17:25:37,553: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage started <<<<<]
+[2026-10-20 17:25:37,557: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-20 17:25:37,561: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-20 17:25:37,564: INFO: common: created directory at: artifacts]
+[2026-10-20 17:25:37,566: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-20 17:25:39,827: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-20 17:25:40,755: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-20 17:25:41,323: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage completed!<<<<<
+
+x==========x]
+[2026-10-20 17:25:52,072: INFO: stage_03_model_training: >>>>> stage Model Training stage started <<<<<]
+[2026-10-20 17:25:52,074: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-20 17:25:52,076: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-20 17:25:52,078: INFO: common: created directory at: artifacts]
+[2026-10-20 17:25:52,079: INFO: common: created directory at: artifacts\training]
+[2026-10-20 17:25:53,647: INFO: model_training: Loaded split manifest: Train=7950 samples, Val=1993 samples.]
+[2026-10-20 17:25:53,953: INFO: model_training: Class weighting for training balance: {0: np.float64(0.9091948764867338), 1: np.float64(0.596667667367157), 2: np.float64(2.191289966923925), 3: np.float64(1.302424639580603)}]
+[2026-10-20 17:25:53,955: INFO: model_training: === Phase 1: Warmup Training (3 epochs) ===]
+[2026-10-20 17:51:10,051: INFO: model_training: === Phase 2: Gradual Fine-Tuning (Unfreezing top 30 layers) ===]
+[2026-10-20 18:02:50,430: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-20 18:44:37,404: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-20 19:26:33,884: INFO: model_training: Successfully retained best model weights from ModelCheckpoint.]
+[2026-10-20 19:26:35,624: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-20 19:26:35,695: INFO: stage_03_model_training: >>>>> stage Model Training stage completed!<<<<<
+
+x==========x]
+[2026-10-20 19:27:15,870: INFO: stage_04_model_evaluation: >>>>> stage Model Evaluation stage started <<<<<]
+[2026-10-20 19:27:15,877: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-20 19:27:15,881: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-20 19:27:15,883: INFO: common: created directory at: artifacts]
+[2026-10-20 19:27:18,189: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-20 19:27:18,314: INFO: model_evaulation_mlflow: Loaded untouched independent test set with 1986 samples.]
+[2026-10-20 19:27:18,373: INFO: model_evaulation_mlflow: Evaluating model on independent test set...]
+[2026-10-20 19:28:59,858: INFO: model_evaulation_mlflow: Generating predictions for classification report and confusion matrix...]
+[2026-10-20 19:30:40,532: INFO: model_evaulation_mlflow: 
+Independent Test Classification Report:
+              precision    recall  f1-score   support
+
+        Cyst     0.7327    0.7153    0.7239       548
+      Normal     0.7476    0.8309    0.7871       834
+       Stone     0.4569    0.6327    0.5306       226
+       Tumor     0.4218    0.2354    0.3022       378
+
+    accuracy                         0.6631      1986
+   macro avg     0.5897    0.6036    0.5859      1986
+weighted avg     0.6484    0.6631    0.6482      1986
+]
+[2026-10-20 19:30:40,533: INFO: model_evaulation_mlflow: 
+Confusion Matrix:
+[[392   2 120  34]
+ [ 21 693  32  88]
+ [ 49  34 143   0]
+ [ 73 198  18  89]]]
+[2026-10-20 19:30:44,636: INFO: model_evaulation_mlflow: Saved confusion matrix plot at artifacts\evaluation\confusion_matrix.png]
+[2026-10-20 19:30:44,640: INFO: common: json file saved at: scores.json]
+[2026-10-20 19:30:44,643: INFO: common: json file saved at: artifacts\evaluation\detailed_metrics.json]
+[2026-10-20 19:30:44,643: INFO: model_evaulation_mlflow: Saved scores.json and detailed_metrics.json.]
+[2026-10-20 19:39:49,562: INFO: model_evaulation_mlflow: Successfully logged metrics and model artifact to MLflow.]
+[2026-10-20 19:39:50,690: INFO: stage_04_model_evaluation: >>>>> stage Model Evaluation stage completed!<<<<<
+
+x==========x]
+[2026-10-20 22:16:11,582: INFO: stage_01_data_ingestion: >>>>> stage Data Ingestion stage started <<<<<]
+[2026-10-20 22:16:11,586: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-20 22:16:11,590: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-20 22:16:11,592: INFO: common: created directory at: artifacts]
+[2026-10-20 22:16:11,597: INFO: common: created directory at: artifacts/data_ingestion]
+[2026-10-20 22:16:11,599: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/18RmxqG-RItRmQNV7JvA__ik-eF6EGRPt/view?usp=sharing into file artifacts\data_ingestion\data.zip]
+[2026-10-20 22:29:52,646: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/18RmxqG-RItRmQNV7JvA__ik-eF6EGRPt/view?usp=sharing into file artifacts\data_ingestion\data.zip]
+[2026-10-20 22:30:22,620: INFO: stage_01_data_ingestion: >>>>> stage Data Ingestion stage completed!<<<<<
+
+x==========x]
+[2026-10-20 22:31:53,407: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage started <<<<<]
+[2026-10-20 22:31:53,414: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-20 22:31:53,420: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-20 22:31:53,423: INFO: common: created directory at: artifacts]
+[2026-10-20 22:31:53,426: INFO: common: created directory at: artifacts/prepare_base_model]
+[2026-10-20 22:31:56,380: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-20 22:31:57,603: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-20 22:31:58,353: INFO: stage_02_prepare_base_model: >>>>> stage Prepare Base Model stage completed!<<<<<
+
+x==========x]
+[2026-10-20 22:32:09,197: INFO: stage_03_model_training: >>>>> stage Model Training stage started <<<<<]
+[2026-10-20 22:32:09,200: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-20 22:32:09,202: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-20 22:32:09,203: INFO: common: created directory at: artifacts]
+[2026-10-20 22:32:09,205: INFO: common: created directory at: artifacts\training]
+[2026-10-20 22:47:56,454: WARNING: saving_api: You are saving your model as an HDF5 file via `model.save()` or `keras.saving.save_model(model)`. This file format is considered legacy. We recommend using instead the native Keras format, e.g. `model.save('my_model.keras')` or `keras.saving.save_model(model, 'my_model.keras')`. ]
+[2026-10-21 00:13:40,412: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-21 00:13:40,455: INFO: stage_03_model_training: >>>>> stage Model Training stage completed!<<<<<
+
+x==========x]
+[2026-10-21 00:13:57,555: INFO: stage_04_model_evaluation: >>>>> stage Model Evaluation stage started <<<<<]
+[2026-10-21 00:13:57,558: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2026-10-21 00:13:57,560: INFO: common: yaml file: params.yaml loaded successfully]
+[2026-10-21 00:13:57,562: INFO: common: created directory at: artifacts]
+[2026-10-21 00:13:59,019: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2026-10-21 00:15:51,310: INFO: common: json file saved at: scores.json]
+[2026-10-21 00:32:10,776: INFO: stage_04_model_evaluation: >>>>> stage Model Evaluation stage completed!<<<<<
+
+x==========x]

@@ -19,6 +19,7 @@ stages:
       - CLASSES
       - WEIGHTS
       - LEARNING_RATE
+      - FREEZE_TILL
     outs:
       - artifacts/prepare_base_model
 
@@ -35,6 +36,7 @@ stages:
       - EPOCHS
       - BATCH_SIZE
       - AUGMENTATION
+      - LEARNING_RATE
     outs:
       - artifacts/training/model.h5
 

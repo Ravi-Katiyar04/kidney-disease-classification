@@ -12,11 +12,24 @@ class PrepareBaseModel:
         self.config = config
 
     def get_base_model(self):
-        self.model = tf.keras.applications.EfficientNetV2B0(
-            input_shape=self.config.params_image_size,
+        inputs = tf.keras.layers.Input(
+            shape=self.config.params_image_size,
+            name="image_input"
+        )
+        # Rescaling layer normalizes [0, 255] to [-1, 1] for ResNet50V2
+        x = tf.keras.layers.Rescaling(
+            scale=1.0 / 127.5,
+            offset=-1.0,
+            name="resnet_rescaling"
+        )(inputs)
+
+        base_model = tf.keras.applications.ResNet50V2(
+            input_tensor=x,
             weights=self.config.params_weights,
             include_top=self.config.params_include_top
         )
+
+        self.model = base_model
 
         self.save_model(
             path=self.config.base_model_path,
@@ -39,31 +52,32 @@ class PrepareBaseModel:
             for layer in model.layers[:-freeze_till]:
                 layer.trainable = False
             for layer in model.layers[-freeze_till:]:
-                layer.trainable = True
+                # Critical for transfer learning: preserve pretrained BN population statistics
+                if isinstance(layer, tf.keras.layers.BatchNormalization):
+                    layer.trainable = False
+                else:
+                    layer.trainable = True
+        else:
+            for layer in model.layers:
+                if isinstance(layer, tf.keras.layers.BatchNormalization):
+                    layer.trainable = False
+                else:
+                    layer.trainable = True
 
         # Classification head
         x = tf.keras.layers.GlobalAveragePooling2D(
-            name="global_average_pooling"
+            name="gap"
         )(model.output)
-
-        x = tf.keras.layers.BatchNormalization(
-            name="batch_norm"
-        )(x)
-
-        x = tf.keras.layers.Dropout(
-            rate=0.3,
-            name="dropout_1"
-        )(x)
 
         x = tf.keras.layers.Dense(
             units=256,
             activation="relu",
-            name="dense_relu"
+            name="dense_256"
         )(x)
 
         x = tf.keras.layers.Dropout(
-            rate=0.2,
-            name="dropout_2"
+            rate=0.3,
+            name="dropout"
         )(x)
 
         # Four classes: Normal, Tumor, Stone, Cyst
@@ -90,11 +104,12 @@ class PrepareBaseModel:
         return full_model
 
     def update_base_model(self):
+        freeze_till = getattr(self.config, "params_freeze_till", 35)
         self.full_model = self._prepare_full_model(
             model=self.model,
             classes=self.config.params_classes,
             freeze_all=False,
-            freeze_till=20,
+            freeze_till=freeze_till,
             learning_rate=self.config.params_learning_rate
         )
 

@@ -18,16 +18,17 @@ class Training:
             compile=False
         )
 
+        lr = getattr(self.config, "params_learning_rate", 1e-4)
         self.model.compile(
             optimizer=tf.keras.optimizers.Adam(
-                learning_rate=1e-4
+                learning_rate=lr
             ),
             loss=tf.keras.losses.CategoricalCrossentropy(),
-            metrics=["accuracy"]
+            metrics=["accuracy", tf.keras.metrics.AUC(name="auc")]
         )
 
     def train_valid_generator(self):
-        # Note: EfficientNetV2 includes internal rescaling & normalization [0, 255]
+        # Note: ResNet50V2 includes internal rescaling [-1, 1] layer in the model
         datagenerator_kwargs = dict(
             validation_split=0.20
         )
@@ -35,7 +36,7 @@ class Training:
         dataflow_kwargs = dict(
             target_size=tuple(self.config.params_image_size[:2]),
             batch_size=self.config.params_batch_size,
-            interpolation="bilinear",
+            interpolation="bicubic",
             class_mode="categorical"
         )
 
@@ -56,11 +57,13 @@ class Training:
         if self.config.params_is_augmentation:
             train_datagenerator = (
                 tf.keras.preprocessing.image.ImageDataGenerator(
-                    rotation_range=20,
+                    rotation_range=15,
                     horizontal_flip=True,
-                    width_shift_range=0.1,
-                    height_shift_range=0.1,
+                    vertical_flip=True,
+                    width_shift_range=0.08,
+                    height_shift_range=0.08,
                     zoom_range=0.1,
+                    fill_mode="nearest",
                     **datagenerator_kwargs
                 )
             )
@@ -80,28 +83,27 @@ class Training:
         model.save(str(path))
 
     def train(self):
-        # Compute balanced class weights to prevent majority-class collapse
-        labels = self.train_generator.classes
-        class_weights = compute_class_weight(
-            class_weight="balanced",
-            classes=np.unique(labels),
-            y=labels
-        )
-        class_weight_dict = dict(enumerate(class_weights))
-        print("Calculated class weights:", class_weight_dict)
-
         callbacks = [
             tf.keras.callbacks.EarlyStopping(
-                monitor="val_loss",
-                patience=5,
+                monitor="val_accuracy",
+                mode="max",
+                patience=6,
                 restore_best_weights=True,
                 verbose=1
             ),
             tf.keras.callbacks.ReduceLROnPlateau(
-                monitor="val_loss",
-                factor=0.2,
+                monitor="val_accuracy",
+                mode="max",
+                factor=0.5,
                 patience=2,
                 min_lr=1e-6,
+                verbose=1
+            ),
+            tf.keras.callbacks.ModelCheckpoint(
+                filepath=str(self.config.trained_model_path),
+                monitor="val_accuracy",
+                mode="max",
+                save_best_only=True,
                 verbose=1
             )
         ]
@@ -110,11 +112,15 @@ class Training:
             self.train_generator,
             epochs=self.config.params_epoch,
             validation_data=self.valid_generator,
-            class_weight=class_weight_dict,
             callbacks=callbacks
         )
 
-        self.save_model(
-            path=self.config.trained_model_path,
-            model=self.model
-        )
+        # Reload the absolute best checkpoint saved during training
+        if os.path.exists(str(self.config.trained_model_path)):
+            print("Successfully retained best model weights from ModelCheckpoint.")
+            self.model = tf.keras.models.load_model(str(self.config.trained_model_path))
+        else:
+            self.save_model(
+                path=self.config.trained_model_path,
+                model=self.model
+            )
