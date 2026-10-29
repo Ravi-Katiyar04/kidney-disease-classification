@@ -30,6 +30,7 @@ Flask-Cors>=5.0.0,<6.0
 
 # Download
 gdown>=5.2.0,<6.0
+huggingface_hub>=0.20.0
 
 # DVC
 dvc>=3.59.0,<4.0

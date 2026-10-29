@@ -4,6 +4,16 @@ from pathlib import Path
 from flask import Flask, request, jsonify, render_template, send_file
 from flask_cors import CORS, cross_origin
 
+# Hugging Face Hub model integration for deployment:
+# from huggingface_hub import hf_hub_download
+# from tensorflow.keras.models import load_model
+#
+# model_path = hf_hub_download(
+#     repo_id="katiyar2002/kidney-disease-classification",
+#     filename="model.h5"
+# )
+# model = load_model(model_path, compile=False)
+
 from cnnClassifier import logger
 from cnnClassifier.utils.common import decodeImage, load_json
 from cnnClassifier.pipeline.prediction import PredictionPipeline
@@ -19,6 +29,7 @@ CORS(app)
 class ClientApp:
     def __init__(self):
         self.filename = "inputImage.jpg"
+        # PredictionPipeline downloads and caches the model from Hugging Face Hub for cloud deployment
         self.classifier = PredictionPipeline(self.filename)
 
 
