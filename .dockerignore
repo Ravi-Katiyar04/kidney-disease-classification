@@ -1,0 +1,49 @@
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+env.bak/
+venv.bak/
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Git and version control
+.git/
+.gitignore
+.github/
+
+# DVC directories and cache
+.dvc/
+.dvcignore
+dvc.lock
+
+# Heavy datasets and local artifacts (model is served via Hugging Face Hub)
+artifacts/
+*.zip
+*.tar.gz
+
+# Local logs and environment files
+logs/
+*.log
+.env
+
+# Research and experiment notebooks
+research/
+.ipynb_checkpoints/
+
+# IDE and OS files
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
+

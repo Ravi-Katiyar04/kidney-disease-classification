@@ -88,3 +88,26 @@ DVC
  - lite weight expriements tracker
  - It can perform Orchestration (Creating Pipelines)
 
+
+
+## Docker Deployment
+
+### 1. Build and Run with Docker Compose (Recommended)
+```bash
+docker compose up --build
+```
+Access the application at `http://localhost:8080`.
+
+To stop the container:
+```bash
+docker compose down
+```
+
+### 2. Build and Run with Docker CLI
+```bash
+# Build the Docker image
+docker build -t kidney-disease-classifier .
+
+# Run the container
+docker run -p 8080:8080 -e PORT=8080 --name kidney_app kidney-disease-classifier
+```

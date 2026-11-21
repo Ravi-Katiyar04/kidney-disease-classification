@@ -1,0 +1,21 @@
+services:
+  kidney-disease-classifier:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    image: kidney-disease-classifier:latest
+    container_name: kidney_disease_classifier
+    restart: unless-stopped
+    ports:
+      - "8080:8080"
+    environment:
+      - PORT=8080
+      - LANG=en_US.UTF-8
+      - LC_ALL=en_US.UTF-8
+    volumes:
+      # Persistent cache for Hugging Face model downloads across container restarts
+      - hf_model_cache:/root/.cache/huggingface
+
+volumes:
+  hf_model_cache:
+
