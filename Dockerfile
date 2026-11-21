@@ -19,6 +19,9 @@ RUN apt-get update && apt-get install -y --no-install-recommends \
 COPY requirements.txt setup.py README.md ./
 COPY src ./src
 
+# Clean any existing local egg-info artifacts that conflict with pip inside container
+RUN rm -rf src/*.egg-info *.egg-info build/ dist/
+
 # Upgrade pip and install all Python dependencies (including cnnClassifier package)
 RUN pip install --no-cache-dir --upgrade pip && \
     pip install --no-cache-dir -r requirements.txt
@@ -38,4 +41,3 @@ HEALTHCHECK --interval=30s --timeout=10s --start-period=40s --retries=3 \
 
 # Launch Flask application
 CMD ["python", "app.py"]
-
